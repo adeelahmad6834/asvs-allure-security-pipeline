@@ -198,26 +198,6 @@ set -a; source ./.env.local; set +a
 
 ## 8) Repository hygiene
 
-**.gitignore**
-```
-# security outputs & reports
-security-reports/
-allure-report/
-allure-results/
-**/*.redacted.*
-**/zap-af-plan.yaml
-**/*.log
-**/*.tgz
-
-# node & tool caches
-node_modules/
-.odc-cache/
-
-# IDE
-.idea/
-.vscode/
-```
-
 **env.example**
 ```
 # Minimal, non‑secret placeholders
@@ -246,20 +226,10 @@ devsecops-switchboard/
 └─ env.example
 ```
 
-**Publish to GitHub**
-```bash
-git init
-git add .
-git commit -m "Initial public release: DevSecOps security scans switchboard"
-git branch -M main
-git remote add origin https://github.com/<you>/devsecops-switchboard.git
-git push -u origin main
-```
-
 ---
 
 ## 9) Contributing
 PRs welcome. Avoid sharing live credentials/endpoints in issues. See `SECURITY.md` for sensitive disclosures.
 
 ## 10) License
-MIT (recommended). Include a `LICENSE` file in your repo.
+MIT. See LICENSE.

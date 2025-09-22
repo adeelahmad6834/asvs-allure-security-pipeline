@@ -31,6 +31,51 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { randomUUID } from 'crypto';
 
+// === Severity rollup (cross-tool) ============================
+type Severity = 'critical' | 'high' | 'medium' | 'low' | 'unknown';
+
+type Rollup = {
+  timestamp: string;
+  totals: Record<Severity, number>;
+  byTool: Record<string, Record<Severity, number>>;
+};
+
+function getSummaryPath(outDir: string): string {
+  const forced = process.env.ROLLUP_PATH;
+  return forced && forced.trim() ? forced : path.join(outDir, 'severity-rollup.json');
+}
+function emptyBuckets(): Record<Severity, number> {
+  return { critical: 0, high: 0, medium: 0, low: 0, unknown: 0 };
+}
+function loadRollup(p: string): Rollup {
+  try {
+    const j = JSON.parse(fs.readFileSync(p, 'utf8'));
+    if (j && j.totals && j.byTool) return j as Rollup;
+  } catch { }
+  return { timestamp: new Date().toISOString(), totals: emptyBuckets(), byTool: {} };
+}
+function saveRollup(p: string, r: Rollup) {
+  r.timestamp = new Date().toISOString();
+  fs.writeFileSync(p, JSON.stringify(r, null, 2));
+  // Also emit a CSV neighbor for convenience
+  const csvPath = p.replace(/\.json$/i, '.csv');
+  const hdr = 'tool,critical,high,medium,low,unknown,total';
+  const lines: string[] = [hdr];
+
+  const sum = { ...emptyBuckets() };
+  (Object.keys(sum) as Severity[]).forEach(sev => { sum[sev] = r.totals[sev] || 0; });
+  const sumTotal = Object.values(sum).reduce((a, b) => a + b, 0);
+  lines.push(`ALL,${sum.critical},${sum.high},${sum.medium},${sum.low},${sum.unknown},${sumTotal}`);
+
+  const tools = Object.keys(r.byTool).sort();
+  for (const t of tools) {
+    const b = r.byTool[t] || emptyBuckets();
+    const total = (b.critical || 0) + (b.high || 0) + (b.medium || 0) + (b.low || 0) + (b.unknown || 0);
+    lines.push(`${t},${b.critical || 0},${b.high || 0},${b.medium || 0},${b.low || 0},${b.unknown || 0},${total}`);
+  }
+  fs.writeFileSync(csvPath, lines.join('\n'));
+}
+
 // --------------------------- CLI ---------------------------
 type Tool = 'dependency-check' | 'trivy' | 'zap' | 'semgrep' | 'gitleaks' | 'npm-audit' | 'sonar';
 type DcMode = 'dependency' | 'finding';
@@ -222,6 +267,46 @@ function writeAllureTest(outDir: string, test: any) {
   }
 }
 
+function writeAllureRollupTest(outDir: string, r: Rollup) {
+  const sum = r.totals;
+  const msg =
+    `Severity totals (cross-tool)\n` +
+    `  • Critical: ${sum.critical}\n` +
+    `  • High    : ${sum.high}\n` +
+    `  • Medium  : ${sum.medium}\n` +
+    `  • Low     : ${sum.low}\n` +
+    `  • Unknown : ${sum.unknown}\n` +
+    `Updated: ${r.timestamp}`;
+
+  const csvPath = getSummaryPath(outDir).replace(/\.json$/i, '.csv');
+  const jsonPath = getSummaryPath(outDir);
+
+  // Stage attachments (if files exist)
+  const atts: any[] = [];
+  try { atts.push({ name: 'severity-rollup.csv', type: 'text/csv', source: path.basename(csvPath), __body: fs.readFileSync(csvPath, 'utf8') }); } catch { }
+  try { atts.push({ name: 'severity-rollup.json', type: 'application/json', source: path.basename(jsonPath), __body: fs.readFileSync(jsonPath, 'utf8') }); } catch { }
+
+  const test = {
+    uuid: randomUUID(),
+    historyId: randomUUID(),
+    name: 'Severity Rollup Summary',
+    fullName: 'Meta :: Severity Rollup Summary',
+    status: 'passed',
+    statusDetails: { message: msg },
+    labels: [
+      { name: 'feature', value: 'Meta' },
+      { name: 'parentSuite', value: 'Severity: INFO' },
+      { name: 'severity', value: 'trivial' }
+    ],
+    steps: [],
+    attachments: atts.map(a => ({ name: a.name, source: a.source, type: a.type })),
+    __attachments: atts,
+    start: Date.now(),
+    stop: Date.now()
+  };
+  writeAllureTest(outDir, test);
+}
+
 // --------------------------- Normalized model ---------------------------
 type NormVuln = {
   id?: string;
@@ -354,7 +439,7 @@ function assignOwnership(tool: Tool, finding: any): { owner?: string; component?
         return { owner: r.owner, component: r.component };
     } else if (tool === 'sonar') {
       const ruleId = String(finding.ruleKey || '');
-      const file   = String(finding.groupName || '');
+      const file = String(finding.groupName || '');
       if (r.ruleId && r.ruleId === ruleId) return { owner: r.owner, component: r.component };
       if (r.targetIncludes && file.toLowerCase().includes(String(r.targetIncludes).toLowerCase()))
         return { owner: r.owner, component: r.component };
@@ -726,11 +811,11 @@ const SONAR_MIN_SEVERITY = (process.env.SONAR_MIN_SEVERITY || 'low').toLowerCase
 
 const SONAR_AGGREGATE = String(process.env.SONAR_AGGREGATE || '1') === '1';
 
-const sevRank: Record<'unknown'|'low'|'medium'|'high'|'critical', number> = {
+const sevRank: Record<'unknown' | 'low' | 'medium' | 'high' | 'critical', number> = {
   unknown: 0, low: 1, medium: 2, high: 3, critical: 4,
 };
 
-function mapSonarSev(s: string): 'critical'|'high'|'medium'|'low'|'unknown' {
+function mapSonarSev(s: string): 'critical' | 'high' | 'medium' | 'low' | 'unknown' {
   const t = (s || '').toUpperCase();
   if (t === 'BLOCKER' || t === 'CRITICAL') return 'critical';
   if (t === 'MAJOR') return 'high';
@@ -740,7 +825,7 @@ function mapSonarSev(s: string): 'critical'|'high'|'medium'|'low'|'unknown' {
 }
 
 function sonarIssueUrl(issueKey: string, project: string): string {
-  const host = (process.env.SONAR_HOST_URL || '').replace(/\/+$/,'');
+  const host = (process.env.SONAR_HOST_URL || '').replace(/\/+$/, '');
   return (host && issueKey && project)
     ? `${host}/project/issues?open=${encodeURIComponent(issueKey)}&id=${encodeURIComponent(project)}`
     : '';
@@ -752,7 +837,7 @@ function parseSonar(obj: any): NormFinding[] {
   const out: NormFinding[] = [];
 
   // components: map component key -> readable path
-  const comps = new Map<string,string>();
+  const comps = new Map<string, string>();
   for (const c of safeArray<any>(obj.components)) {
     if (c?.key) comps.set(String(c.key), String(c.path || c.longName || c.name || c.key));
   }
@@ -760,16 +845,16 @@ function parseSonar(obj: any): NormFinding[] {
   // Normalize, then filter by type + min severity
   const normalized = safeArray<any>(obj.issues).map((it) => {
     const type = String(it.type || 'ISSUE').toUpperCase(); // CODE_SMELL | BUG | VULNERABILITY | SECURITY_HOTSPOT
-    const sev  = mapSonarSev(String(it.severity || ''));
+    const sev = mapSonarSev(String(it.severity || ''));
     const component = String(it.component || '');
-    const filePath  = comps.get(component) || (component.includes(':') ? component.split(':').pop()! : component) || 'file';
-    const lineNum   = it.line ? Number(it.line) : undefined;
-    const rule      = String(it.rule || '');
-    const message   = String(it.message || rule || 'Sonar issue');
-    const project   = String(it.project || '');
-    const key       = String(it.key || '');
-    const url       = sonarIssueUrl(key, project);
-    const tags      = safeArray<string>(it.tags);
+    const filePath = comps.get(component) || (component.includes(':') ? component.split(':').pop()! : component) || 'file';
+    const lineNum = it.line ? Number(it.line) : undefined;
+    const rule = String(it.rule || '');
+    const message = String(it.message || rule || 'Sonar issue');
+    const project = String(it.project || '');
+    const key = String(it.key || '');
+    const url = sonarIssueUrl(key, project);
+    const tags = safeArray<string>(it.tags);
 
     return { type, sev, filePath, lineNum, rule, message, url, tags };
   });
@@ -811,7 +896,7 @@ function parseSonar(obj: any): NormFinding[] {
     filePath: string;
     type: string;
     rule: string;
-    items: { line?: number; sev: 'critical'|'high'|'medium'|'low'|'unknown'; message: string; url: string; tags: string[] }[];
+    items: { line?: number; sev: 'critical' | 'high' | 'medium' | 'low' | 'unknown'; message: string; url: string; tags: string[] }[];
   }>();
 
   for (const it of filtered) {
@@ -823,15 +908,15 @@ function parseSonar(obj: any): NormFinding[] {
 
   for (const b of buckets.values()) {
     const highest = getHighestSeverity(b.items.map(i => i.sev));
-    const total   = b.items.length;
+    const total = b.items.length;
 
     // Build inline top N and attachments
     const head = b.items.slice(0, MAX_ITEMS_IN_BODY);
     const inline = head.map((x, i) => {
       const where = x.line ? ` (line ${x.line})` : '';
-      const ref   = x.url ? `\n   ref: ${x.url}` : '';
-      const tags  = x.tags?.length ? `\n   tags: ${x.tags.join(', ')}` : '';
-      return `${i+1}. ${x.message}${where} — ${normalizeSeverity(x.sev).toUpperCase()}${ref}${tags}`;
+      const ref = x.url ? `\n   ref: ${x.url}` : '';
+      const tags = x.tags?.length ? `\n   tags: ${x.tags.join(', ')}` : '';
+      return `${i + 1}. ${x.message}${where} — ${normalizeSeverity(x.sev).toUpperCase()}${ref}${tags}`;
     });
     if (total > head.length) inline.push(`… and ${total - head.length} more (see attachment).`);
 
@@ -861,7 +946,7 @@ function parseSonar(obj: any): NormFinding[] {
 
     // Feed the "vulns" path so the compact step renderer kicks in
     const vulns = head.map((x, i) => ({
-      id: `occ-${i+1}`,
+      id: `occ-${i + 1}`,
       name: x.message + (x.line ? ` (line ${x.line})` : ''),
       severity: x.sev,
       score: null,
@@ -945,18 +1030,43 @@ function writeTopOffendersCSV(outDir: string) {
   fs.writeFileSync(path.join(outDir, 'top-offenders.csv'), rows.join('\n'));
 }
 
+function mergeCurrentInvocationIntoRollup(outDir: string, toolName: string): Rollup {
+  // Convert current run's in-memory summary into buckets
+  const current = emptyBuckets();
+  for (const [sevKey, row] of Object.entries(sevSummary)) {
+    const sev = (sevKey as Severity);
+    current[sev] = (current[sev] || 0) + (row.total || 0);
+  }
+
+  const rollPath = getSummaryPath(outDir);
+  const r = loadRollup(rollPath);
+
+  if (!r.byTool[toolName]) r.byTool[toolName] = emptyBuckets();
+
+  (Object.keys(current) as Severity[]).forEach((sev) => {
+    const n = current[sev] || 0;
+    if (n > 0) {
+      r.totals[sev] = (r.totals[sev] || 0) + n;
+      r.byTool[toolName][sev] = (r.byTool[toolName][sev] || 0) + n;
+    }
+  });
+
+  saveRollup(rollPath, r);
+  return r;
+}
+
 // Token-based categories
 function writeSeverityCategoriesJSON(outDir: string) {
   const tok = (s: string) => `(?s).*\\[\\[SEVERITY:${s}\\]\\].*`;
   const noTok = '(?s)^(?!.*\\[\\[SEVERITY:).*$';
   const categories = [
-    { name: '🔥 Critical', matchedStatuses: ['failed','passed'], messageRegex: tok('CRITICAL'), traceRegex: tok('CRITICAL') },
-    { name: '⚡ High',     matchedStatuses: ['failed','passed'], messageRegex: tok('HIGH'),     traceRegex: tok('HIGH') },
-    { name: '🟠 Medium',   matchedStatuses: ['failed','passed'], messageRegex: tok('MEDIUM'),   traceRegex: tok('MEDIUM') },
-    { name: '🟡 Low',      matchedStatuses: ['failed','passed'], messageRegex: tok('LOW'),      traceRegex: tok('LOW') },
-    { name: 'ℹ️ Unknown',  matchedStatuses: ['failed','passed'], messageRegex: tok('UNKNOWN'),  traceRegex: tok('UNKNOWN') },
-    { name: 'Artifacts & Notes', matchedStatuses: ['passed','failed'], messageRegex: '(?s).*Artifacts.*' },
-    { name: 'Other (no severity token)', matchedStatuses: ['failed','passed'], messageRegex: noTok }
+    { name: '🔥 Critical', matchedStatuses: ['failed', 'passed'], messageRegex: tok('CRITICAL'), traceRegex: tok('CRITICAL') },
+    { name: '⚡ High', matchedStatuses: ['failed', 'passed'], messageRegex: tok('HIGH'), traceRegex: tok('HIGH') },
+    { name: '🟠 Medium', matchedStatuses: ['failed', 'passed'], messageRegex: tok('MEDIUM'), traceRegex: tok('MEDIUM') },
+    { name: '🟡 Low', matchedStatuses: ['failed', 'passed'], messageRegex: tok('LOW'), traceRegex: tok('LOW') },
+    { name: 'ℹ️ Unknown', matchedStatuses: ['failed', 'passed'], messageRegex: tok('UNKNOWN'), traceRegex: tok('UNKNOWN') },
+    { name: 'Artifacts & Notes', matchedStatuses: ['passed', 'failed'], messageRegex: '(?s).*Artifacts.*' },
+    { name: 'Other (no severity token)', matchedStatuses: ['failed', 'passed'], messageRegex: noTok }
   ];
   fs.writeFileSync(path.join(outDir, 'categories.json'), JSON.stringify(categories, null, 2));
 }
@@ -1016,7 +1126,7 @@ function createAllureFromFinding(f: NormFinding) {
 
     steps = [{
       name: `${badge(getHighestSeverity(head.map(x => x.severity)))} ${f.name}`,
-      status: head.some(v => ['critical','high'].includes(normalizeSeverity(v.severity))) ? 'failed' : 'passed',
+      status: head.some(v => ['critical', 'high'].includes(normalizeSeverity(v.severity))) ? 'failed' : 'passed',
       statusDetails: { message: lines.join('\n\n') }
     }];
 
@@ -1051,7 +1161,7 @@ function createAllureFromFinding(f: NormFinding) {
   } else {
     steps = [{
       name: `${badge(f.severity)} ${f.name}${f.score ? ` (${f.score}/10)` : ''}`,
-      status: ['critical','high'].includes(normalizeSeverity(f.severity)) ? 'failed' : 'passed',
+      status: ['critical', 'high'].includes(normalizeSeverity(f.severity)) ? 'failed' : 'passed',
       statusDetails: {
         message:
           `Severity: ${normalizeSeverity(f.severity).toUpperCase()}${f.score ? ` (${f.score}/10)` : ''}\n\n` +
@@ -1080,8 +1190,8 @@ function createAllureFromFinding(f: NormFinding) {
         `${severityToken}\n` +
         (asvsRefs.length
           ? `ASVS: ${asvsRefs
-              .map((r) => (r.id ?? r.chapter) + (r.level?.length ? ` [${r.level.join(',')}]` : ''))
-              .join('; ')}\n\n`
+            .map((r) => (r.id ?? r.chapter) + (r.level?.length ? ` [${r.level.join(',')}]` : ''))
+            .join('; ')}\n\n`
           : '') +
         (f.description || ''),
       trace: severityToken,
@@ -1157,6 +1267,21 @@ function main() {
   if (!findings.length) {
     console.log('ℹ️ No findings detected to convert.');
     writeSeverityCategoriesJSON(cli.outDir);
+
+    // NEW: still register this tool with zeroes so it shows up in rollup
+    try {
+      const toolName = (cli.tool || autodetectTool(obj) || 'unknown-tool') as string;
+      // sevSummary is empty here (all zeros), which is fine—we want to seed the tool
+      const r = mergeCurrentInvocationIntoRollup(cli.outDir, toolName);
+      console.log(
+        `🧮 Rollup so far → C:${r.totals.critical} H:${r.totals.high} M:${r.totals.medium} L:${r.totals.low} U:${r.totals.unknown}`
+      );
+      // Optional: also show the rollup card in Allure (comment out if you don't want it)
+      writeAllureRollupTest(cli.outDir, r);
+    } catch (e) {
+      console.warn('⚠️ Failed to update severity rollup on empty run:', (e as Error)?.message || e);
+    }
+
     return;
   }
 
@@ -1182,6 +1307,17 @@ function main() {
   writeTopOffendersCSV(cli.outDir);
 
   console.log(`✅ Parsed ${written} findings from ${tool} → ${path.resolve(cli.outDir)}`);
+
+  // Persist a cross-tool severity rollup and (optionally) show it in Allure
+  try {
+    const r = mergeCurrentInvocationIntoRollup(cli.outDir, tool);
+    console.log(`🧮 Rollup so far → C:${r.totals.critical} H:${r.totals.high} M:${r.totals.medium} L:${r.totals.low} U:${r.totals.unknown} (see ${path.relative(process.cwd(), getSummaryPath(cli.outDir))})`);
+    // Comment out the next line if you DON'T want a rollup card visible in Allure:
+    writeAllureRollupTest(cli.outDir, r);
+  } catch (e) {
+    console.warn('⚠️ Failed to update severity rollup:', (e as Error)?.message || e);
+  }
+
 }
 
 main();

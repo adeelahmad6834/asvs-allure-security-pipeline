@@ -2,10 +2,12 @@
 security-reports/
 allure-report/
 allure-results/
+.allure-accumulate
 **/*.redacted.*
 **/zap-af-plan.yaml
 **/*.log
 **/*.tgz
+runs
 
 # --- Node & tool caches ---
 node_modules/
@@ -31,6 +33,7 @@ coverage/
 *.lcov
 reports/
 out/
+zap.yaml
 
 # --- IDE & OS noise ---
 .idea/

@@ -1,0 +1,6 @@
+{
+  "zap": {
+    "40012": { "owasp": "A03: Injection", "epic": "DAST Injection" },
+    "default": { "owasp": "A00: Other", "epic": "Dynamic Application Security Testing" }
+  }
+}

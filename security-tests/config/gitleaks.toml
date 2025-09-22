@@ -1,0 +1,42 @@
+# Gitleaks config (v8+)
+# This file DOES NOT replace default rules; it only adds a project allowlist to reduce noise.
+# If you later add [[rules]] blocks here, you'll override defaults — keep that in mind.
+
+title = "asvs-allure-security-pipeline gitleaks config"
+description = "Default rules + small allowlist for lockfiles, build artifacts, and obvious non-secrets."
+
+[allowlist]
+  description = "Project-wide allowlist"
+  # Paths to ignore (regex). Keep conservative; do not ignore secrets-y files like keys/.env by default.
+  paths = [
+    '''^package-lock\.json$''',
+    '''^yarn\.lock$''',
+    '''^pnpm-lock\.yaml$''',
+    '''^.*/node_modules/.*$''',
+    '''^.*/dist/.*$''',
+    '''^.*/build/.*$''',
+    '''^.*/coverage/.*$''',
+    '''^.*/.next/.*$''',
+    '''^.*/.cache/.*$'''
+  ]
+
+  # Specific commit SHAs to ignore entirely (leave empty unless you pin noisy history)
+  commits = []
+
+  # Regexes that should never count as secrets (UUIDs, localhost URLs, etc.)
+  regexes = [
+    '''[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}''',
+    '''https?://(localhost|127\.0\.0\.1)(:\\d+)?(/|$)'''
+  ]
+
+  # Words that, when present near a match, strongly indicate the value is not a real secret.
+  stopwords = [
+    "EXAMPLE",
+    "DUMMY",
+    "SAMPLE",
+    "TESTONLY",
+    "FAKE",
+    "PLACEHOLDER",
+    "LOCALHOST",
+    "DEVONLY"
+  ]

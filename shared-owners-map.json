@@ -1,0 +1,27 @@
+{
+  "dependency-check": [
+    { "packageEquals": "lodash", "owner": "Frontend", "component": "Web UI" },
+    { "packageIncludes": "spring", "owner": "Backend", "component": "API" }
+  ],
+  "trivy": [
+    { "type": "VULNERABILITY", "targetIncludes": "node_modules", "owner": "Frontend", "component": "Web UI" },
+    { "type": "MISCONFIGURATION", "targetIncludes": "k8s", "owner": "Platform", "component": "Kubernetes" },
+    { "type": "SECRET", "targetIncludes": "config", "owner": "Security", "component": "Secret Hygiene" }
+  ],
+  "zap": [
+    { "ruleId": "40012", "owner": "Frontend", "component": "Web UI" },
+    { "siteIncludes": "api.", "owner": "Backend", "component": "API" }
+  ],
+  "semgrep": [
+    { "ruleId": "typescript.security.audit.detect-eval-with-expression.detect-eval-with-expression", "owner": "Frontend", "component": "Web UI" },
+    { "targetIncludes": "src/server", "owner": "Backend", "component": "API" }
+  ],
+  "gitleaks": [
+    { "ruleId": "Generic Credential", "owner": "Security", "component": "Secret Hygiene" },
+    { "targetIncludes": "config/", "owner": "Platform", "component": "Config" }
+  ],
+   "sonar": [
+    { "targetIncludes": "NodeGoat/app/data", "owner": "Data Team", "component": "App Data" },
+    { "ruleId": "javascript:S3504", "owner": "Frontend Guild", "component": "JS Standards" }
+  ]
+}

@@ -1,0 +1,50 @@
+# --- Security outputs & reports ---
+security-reports/
+allure-report/
+allure-results/
+**/*.redacted.*
+**/zap-af-plan.yaml
+**/*.log
+**/*.tgz
+
+# --- Node & tool caches ---
+node_modules/
+.odc-cache/
+.npm/
+.pnpm-store/
+.yarn/
+.yarn-cache/
+.cache/
+.tmp/
+
+# --- Python (if Bandit or helper scripts) ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Build artifacts ---
+dist/
+build/
+coverage/
+.coverage
+*.lcov
+reports/
+out/
+
+# --- IDE & OS noise ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Docker ---
+*.pid
+docker-data/
+.docker/
+
+# --- Misc ---
+.env
+.env.local
+.env.*.local
+.envrc

@@ -1,0 +1,10 @@
+# .semgrepignore
+node_modules/
+dist/
+build/
+coverage/
+.nyc_output/
+.next/
+.tmp/
+.tmp_cache/
+.git/

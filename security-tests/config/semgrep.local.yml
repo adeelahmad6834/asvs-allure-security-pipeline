@@ -1,0 +1,30 @@
+# security-tests/config/semgrep.local.yml
+# Custom org/project rules; merged with registry packs via the script.
+
+rules:
+  - id: node.detect-dangerous-child-process
+    languages: [javascript, typescript]
+    severity: ERROR
+    message: "Potential command injection via child_process.{exec,execSync,spawn}"
+    patterns:
+      - pattern-either:
+          - pattern: child_process.exec($CMD, ...)
+          - pattern: child_process.execSync($CMD, ...)
+          - pattern: child_process.spawn($CMD, ...)
+      - pattern-not: child_process.exec("...literal...", ...)
+    metadata:
+      cwe: "CWE-78"
+      references:
+        - https://nodejs.org/api/child_process.html#child_processexeccommand-options-callback
+
+  - id: web.insecure-http-request
+    languages: [javascript, typescript]
+    severity: WARNING
+    message: "HTTP used instead of HTTPS for network request"
+    pattern-either:
+      - pattern: fetch("http://...", ...)
+      - pattern: axios.get("http://...", ...)
+      - pattern: axios("http://...", ...)
+    metadata:
+      cwe: "CWE-319"
+      owasp: "A3:2017-Sensitive Data Exposure"

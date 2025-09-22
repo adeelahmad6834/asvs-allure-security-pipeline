@@ -1,0 +1,2723 @@
+{
+  "dependency-check": {
+    "default": {
+      "asvs": [
+        {
+          "id": "V14.2",
+          "chapter": "V14: Configuration",
+          "level": [
+            "L1"
+          ],
+          "title": "Dependency and platform hardening"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CRITICAL": {
+      "asvs": [
+        {
+          "id": "V14.2",
+          "chapter": "V14: Configuration",
+          "level": [
+            "L1"
+          ],
+          "title": "Dependency and platform hardening"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "HIGH": {
+      "asvs": [
+        {
+          "id": "V14.2",
+          "chapter": "V14: Configuration",
+          "level": [
+            "L1"
+          ],
+          "title": "Dependency and platform hardening"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "MEDIUM": {
+      "asvs": [
+        {
+          "id": "V14.2",
+          "chapter": "V14: Configuration",
+          "level": [
+            "L1"
+          ],
+          "title": "Dependency and platform hardening"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "LOW": {
+      "asvs": [
+        {
+          "id": "V14.2",
+          "chapter": "V14: Configuration",
+          "level": [
+            "L1"
+          ],
+          "title": "Dependency and platform hardening"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "dependency": {
+      "asvs": [
+        {
+          "id": "V14.2",
+          "chapter": "V14: Configuration",
+          "level": [
+            "L1"
+          ],
+          "title": "Dependency and platform hardening"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-79": {
+      "asvs": [
+        {
+          "id": "V5.3",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cross-Site Scripting (XSS)"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-89": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "SQL Injection"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-943": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Injection (NoSQL/ORM)"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-78": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "OS Command Injection"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-22": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Path Traversal"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-352": {
+      "asvs": [
+        {
+          "id": "V3.5",
+          "chapter": "V3: Session Management",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cross-Site Request Forgery"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-434": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Unrestricted File Upload"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-502": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Insecure Deserialization"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-200": {
+      "asvs": [
+        {
+          "id": "V8.2",
+          "chapter": "V8: Data Protection",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Information Exposure"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-522": {
+      "asvs": [
+        {
+          "id": "V6.1",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Insufficiently Protected Credentials"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-259": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Credentials"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-256": {
+      "asvs": [
+        {
+          "id": "V6.2",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Plaintext Storage of Password"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-321": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Key"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-327": {
+      "asvs": [
+        {
+          "id": "V9.3",
+          "chapter": "V9: Communications",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Broken/Obsolete Crypto"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-319": {
+      "asvs": [
+        {
+          "id": "V9.1",
+          "chapter": "V9: Communications",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cleartext Transmission"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-918": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "SSRF"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-611": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "XXE"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-863": {
+      "asvs": [
+        {
+          "id": "V4.2",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Privilege Management"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-284": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Access Control"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-285": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Improper Authorization"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-77": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Command Injection"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-94": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Code Injection"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-640": {
+      "asvs": [
+        {
+          "id": "V3.4",
+          "chapter": "V3: Session Management",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Weak Password Recovery"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-307": {
+      "asvs": [
+        {
+          "id": "V7.2",
+          "chapter": "V7: Error Handling and Logging",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Excessive Auth Attempts"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-798": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Secrets"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-95": {
+      "asvs": [
+        {
+          "id": "V10.1",
+          "chapter": "V10: Malicious Code",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Eval Injection"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-732": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Incorrect Permission Assignment"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-639": {
+      "asvs": [
+        {
+          "id": "V4.2",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "IDOR"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-400": {
+      "asvs": [
+        {
+          "id": "V1.1",
+          "chapter": "V1: Architecture, Design and Threat Modeling",
+          "level": [
+            "L1"
+          ],
+          "title": "Uncontrolled Resource Consumption"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    }
+  },
+  "trivy": {
+    "default": {
+      "asvs": [
+        {
+          "id": "V14.1",
+          "chapter": "V14: Configuration",
+          "level": [
+            "L1"
+          ],
+          "title": "Security configuration"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "VULNERABILITY": {
+      "asvs": [
+        {
+          "id": "V14.2",
+          "chapter": "V14: Configuration",
+          "level": [
+            "L1"
+          ],
+          "title": "Dependency and platform hardening"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "MISCONFIGURATION": {
+      "asvs": [
+        {
+          "id": "V14.1",
+          "chapter": "V14: Configuration",
+          "level": [
+            "L1"
+          ],
+          "title": "Security configuration"
+        }
+      ],
+      "epic": "Security Misconfiguration"
+    },
+    "SECRET": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1"
+          ],
+          "title": "Secret management"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-79": {
+      "asvs": [
+        {
+          "id": "V5.3",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cross-Site Scripting (XSS)"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-89": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "SQL Injection"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-943": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Injection (NoSQL/ORM)"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-78": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "OS Command Injection"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-22": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Path Traversal"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-352": {
+      "asvs": [
+        {
+          "id": "V3.5",
+          "chapter": "V3: Session Management",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cross-Site Request Forgery"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-434": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Unrestricted File Upload"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-502": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Insecure Deserialization"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-200": {
+      "asvs": [
+        {
+          "id": "V8.2",
+          "chapter": "V8: Data Protection",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Information Exposure"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-522": {
+      "asvs": [
+        {
+          "id": "V6.1",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Insufficiently Protected Credentials"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-259": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Credentials"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-256": {
+      "asvs": [
+        {
+          "id": "V6.2",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Plaintext Storage of Password"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-321": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Key"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-327": {
+      "asvs": [
+        {
+          "id": "V9.3",
+          "chapter": "V9: Communications",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Broken/Obsolete Crypto"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-319": {
+      "asvs": [
+        {
+          "id": "V9.1",
+          "chapter": "V9: Communications",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cleartext Transmission"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-918": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "SSRF"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-611": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "XXE"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-863": {
+      "asvs": [
+        {
+          "id": "V4.2",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Privilege Management"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-284": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Access Control"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-285": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Improper Authorization"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-77": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Command Injection"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-94": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Code Injection"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-640": {
+      "asvs": [
+        {
+          "id": "V3.4",
+          "chapter": "V3: Session Management",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Weak Password Recovery"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-307": {
+      "asvs": [
+        {
+          "id": "V7.2",
+          "chapter": "V7: Error Handling and Logging",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Excessive Auth Attempts"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-798": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Secrets"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-95": {
+      "asvs": [
+        {
+          "id": "V10.1",
+          "chapter": "V10: Malicious Code",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Eval Injection"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-732": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Incorrect Permission Assignment"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-639": {
+      "asvs": [
+        {
+          "id": "V4.2",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "IDOR"
+        }
+      ],
+      "epic": "Security Finding"
+    },
+    "CWE-400": {
+      "asvs": [
+        {
+          "id": "V1.1",
+          "chapter": "V1: Architecture, Design and Threat Modeling",
+          "level": [
+            "L1"
+          ],
+          "title": "Uncontrolled Resource Consumption"
+        }
+      ],
+      "epic": "Security Finding"
+    }
+  },
+  "zap": {
+    "default": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1"
+          ],
+          "title": "Generic input validation"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-79": {
+      "asvs": [
+        {
+          "id": "V5.3",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cross-Site Scripting (XSS)"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-89": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "SQL Injection"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-943": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Injection (NoSQL/ORM)"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-78": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "OS Command Injection"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-22": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Path Traversal"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-352": {
+      "asvs": [
+        {
+          "id": "V3.5",
+          "chapter": "V3: Session Management",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cross-Site Request Forgery"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-434": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Unrestricted File Upload"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-502": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Insecure Deserialization"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-200": {
+      "asvs": [
+        {
+          "id": "V8.2",
+          "chapter": "V8: Data Protection",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Information Exposure"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-522": {
+      "asvs": [
+        {
+          "id": "V6.1",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Insufficiently Protected Credentials"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-259": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Credentials"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-256": {
+      "asvs": [
+        {
+          "id": "V6.2",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Plaintext Storage of Password"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-321": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Key"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-327": {
+      "asvs": [
+        {
+          "id": "V9.3",
+          "chapter": "V9: Communications",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Broken/Obsolete Crypto"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-319": {
+      "asvs": [
+        {
+          "id": "V9.1",
+          "chapter": "V9: Communications",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cleartext Transmission"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-918": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "SSRF"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-611": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "XXE"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-863": {
+      "asvs": [
+        {
+          "id": "V4.2",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Privilege Management"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-284": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Access Control"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-285": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Improper Authorization"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-77": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Command Injection"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-94": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Code Injection"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-640": {
+      "asvs": [
+        {
+          "id": "V3.4",
+          "chapter": "V3: Session Management",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Weak Password Recovery"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-307": {
+      "asvs": [
+        {
+          "id": "V7.2",
+          "chapter": "V7: Error Handling and Logging",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Excessive Auth Attempts"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-798": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Secrets"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-95": {
+      "asvs": [
+        {
+          "id": "V10.1",
+          "chapter": "V10: Malicious Code",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Eval Injection"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-732": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Incorrect Permission Assignment"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-639": {
+      "asvs": [
+        {
+          "id": "V4.2",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "IDOR"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    },
+    "CWE-400": {
+      "asvs": [
+        {
+          "id": "V1.1",
+          "chapter": "V1: Architecture, Design and Threat Modeling",
+          "level": [
+            "L1"
+          ],
+          "title": "Uncontrolled Resource Consumption"
+        }
+      ],
+      "epic": "Dynamic Application Security Testing"
+    }
+  },
+  "semgrep": {
+    "default": {
+      "asvs": [
+        {
+          "id": "V10.1",
+          "chapter": "V10: Malicious Code",
+          "level": [
+            "L1"
+          ],
+          "title": "Static code issues"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-79": {
+      "asvs": [
+        {
+          "id": "V5.3",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cross-Site Scripting (XSS)"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-89": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "SQL Injection"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-943": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Injection (NoSQL/ORM)"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-78": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "OS Command Injection"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-22": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Path Traversal"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-352": {
+      "asvs": [
+        {
+          "id": "V3.5",
+          "chapter": "V3: Session Management",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cross-Site Request Forgery"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-434": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Unrestricted File Upload"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-502": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Insecure Deserialization"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-200": {
+      "asvs": [
+        {
+          "id": "V8.2",
+          "chapter": "V8: Data Protection",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Information Exposure"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-522": {
+      "asvs": [
+        {
+          "id": "V6.1",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Insufficiently Protected Credentials"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-259": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Credentials"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-256": {
+      "asvs": [
+        {
+          "id": "V6.2",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Plaintext Storage of Password"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-321": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Key"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-327": {
+      "asvs": [
+        {
+          "id": "V9.3",
+          "chapter": "V9: Communications",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Broken/Obsolete Crypto"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-319": {
+      "asvs": [
+        {
+          "id": "V9.1",
+          "chapter": "V9: Communications",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cleartext Transmission"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-918": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "SSRF"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-611": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "XXE"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-863": {
+      "asvs": [
+        {
+          "id": "V4.2",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Privilege Management"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-284": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Access Control"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-285": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Improper Authorization"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-77": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Command Injection"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-94": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Code Injection"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-640": {
+      "asvs": [
+        {
+          "id": "V3.4",
+          "chapter": "V3: Session Management",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Weak Password Recovery"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-307": {
+      "asvs": [
+        {
+          "id": "V7.2",
+          "chapter": "V7: Error Handling and Logging",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Excessive Auth Attempts"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-798": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Secrets"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-95": {
+      "asvs": [
+        {
+          "id": "V10.1",
+          "chapter": "V10: Malicious Code",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Eval Injection"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-732": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Incorrect Permission Assignment"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-639": {
+      "asvs": [
+        {
+          "id": "V4.2",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "IDOR"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "CWE-400": {
+      "asvs": [
+        {
+          "id": "V1.1",
+          "chapter": "V1: Architecture, Design and Threat Modeling",
+          "level": [
+            "L1"
+          ],
+          "title": "Uncontrolled Resource Consumption"
+        }
+      ],
+      "epic": "Static Application Security Testing"
+    }
+  },
+  "gitleaks": {
+    "default": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1"
+          ],
+          "title": "Secret management"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-79": {
+      "asvs": [
+        {
+          "id": "V5.3",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cross-Site Scripting (XSS)"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-89": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "SQL Injection"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-943": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Injection (NoSQL/ORM)"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-78": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "OS Command Injection"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-22": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Path Traversal"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-352": {
+      "asvs": [
+        {
+          "id": "V3.5",
+          "chapter": "V3: Session Management",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cross-Site Request Forgery"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-434": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Unrestricted File Upload"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-502": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Insecure Deserialization"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-200": {
+      "asvs": [
+        {
+          "id": "V8.2",
+          "chapter": "V8: Data Protection",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Information Exposure"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-522": {
+      "asvs": [
+        {
+          "id": "V6.1",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Insufficiently Protected Credentials"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-259": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Credentials"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-256": {
+      "asvs": [
+        {
+          "id": "V6.2",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Plaintext Storage of Password"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-321": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Key"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-327": {
+      "asvs": [
+        {
+          "id": "V9.3",
+          "chapter": "V9: Communications",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Broken/Obsolete Crypto"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-319": {
+      "asvs": [
+        {
+          "id": "V9.1",
+          "chapter": "V9: Communications",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cleartext Transmission"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-918": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "SSRF"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-611": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "XXE"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-863": {
+      "asvs": [
+        {
+          "id": "V4.2",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Privilege Management"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-284": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Access Control"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-285": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Improper Authorization"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-77": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Command Injection"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-94": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Code Injection"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-640": {
+      "asvs": [
+        {
+          "id": "V3.4",
+          "chapter": "V3: Session Management",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Weak Password Recovery"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-307": {
+      "asvs": [
+        {
+          "id": "V7.2",
+          "chapter": "V7: Error Handling and Logging",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Excessive Auth Attempts"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-798": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Secrets"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-95": {
+      "asvs": [
+        {
+          "id": "V10.1",
+          "chapter": "V10: Malicious Code",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Eval Injection"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-732": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Incorrect Permission Assignment"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-639": {
+      "asvs": [
+        {
+          "id": "V4.2",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "IDOR"
+        }
+      ],
+      "epic": "Secret Exposure"
+    },
+    "CWE-400": {
+      "asvs": [
+        {
+          "id": "V1.1",
+          "chapter": "V1: Architecture, Design and Threat Modeling",
+          "level": [
+            "L1"
+          ],
+          "title": "Uncontrolled Resource Consumption"
+        }
+      ],
+      "epic": "Secret Exposure"
+    }
+  },
+  "npm-audit": {
+    "default": {
+      "asvs": [
+        {
+          "id": "V14.2",
+          "chapter": "V14: Configuration",
+          "level": [
+            "L1"
+          ],
+          "title": "Dependency and platform hardening"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CRITICAL": {
+      "asvs": [
+        {
+          "id": "V14.2",
+          "chapter": "V14: Configuration",
+          "level": [
+            "L1"
+          ],
+          "title": "Dependency and platform hardening"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "HIGH": {
+      "asvs": [
+        {
+          "id": "V14.2",
+          "chapter": "V14: Configuration",
+          "level": [
+            "L1"
+          ],
+          "title": "Dependency and platform hardening"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "MODERATE": {
+      "asvs": [
+        {
+          "id": "V14.2",
+          "chapter": "V14: Configuration",
+          "level": [
+            "L1"
+          ],
+          "title": "Dependency and platform hardening"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "LOW": {
+      "asvs": [
+        {
+          "id": "V14.2",
+          "chapter": "V14: Configuration",
+          "level": [
+            "L1"
+          ],
+          "title": "Dependency and platform hardening"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-79": {
+      "asvs": [
+        {
+          "id": "V5.3",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cross-Site Scripting (XSS)"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-89": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "SQL Injection"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-943": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Injection (NoSQL/ORM)"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-78": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "OS Command Injection"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-22": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Path Traversal"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-352": {
+      "asvs": [
+        {
+          "id": "V3.5",
+          "chapter": "V3: Session Management",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cross-Site Request Forgery"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-434": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Unrestricted File Upload"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-502": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Insecure Deserialization"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-200": {
+      "asvs": [
+        {
+          "id": "V8.2",
+          "chapter": "V8: Data Protection",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Information Exposure"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-522": {
+      "asvs": [
+        {
+          "id": "V6.1",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Insufficiently Protected Credentials"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-259": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Credentials"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-256": {
+      "asvs": [
+        {
+          "id": "V6.2",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Plaintext Storage of Password"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-321": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Key"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-327": {
+      "asvs": [
+        {
+          "id": "V9.3",
+          "chapter": "V9: Communications",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Broken/Obsolete Crypto"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-319": {
+      "asvs": [
+        {
+          "id": "V9.1",
+          "chapter": "V9: Communications",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cleartext Transmission"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-918": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "SSRF"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-611": {
+      "asvs": [
+        {
+          "id": "V5.1",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "XXE"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-863": {
+      "asvs": [
+        {
+          "id": "V4.2",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Privilege Management"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-284": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Access Control"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-285": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Improper Authorization"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-77": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Command Injection"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-94": {
+      "asvs": [
+        {
+          "id": "V5.2",
+          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Code Injection"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-640": {
+      "asvs": [
+        {
+          "id": "V3.4",
+          "chapter": "V3: Session Management",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Weak Password Recovery"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-307": {
+      "asvs": [
+        {
+          "id": "V7.2",
+          "chapter": "V7: Error Handling and Logging",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Excessive Auth Attempts"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-798": {
+      "asvs": [
+        {
+          "id": "V6.3",
+          "chapter": "V6: Stored Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Hard-coded Secrets"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-95": {
+      "asvs": [
+        {
+          "id": "V10.1",
+          "chapter": "V10: Malicious Code",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Eval Injection"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-732": {
+      "asvs": [
+        {
+          "id": "V4.1",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Incorrect Permission Assignment"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-639": {
+      "asvs": [
+        {
+          "id": "V4.2",
+          "chapter": "V4: Access Control",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "IDOR"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    },
+    "CWE-400": {
+      "asvs": [
+        {
+          "id": "V1.1",
+          "chapter": "V1: Architecture, Design and Threat Modeling",
+          "level": [
+            "L1"
+          ],
+          "title": "Uncontrolled Resource Consumption"
+        }
+      ],
+      "epic": "Insecure Dependency"
+    }
+  },
+  "sonar": {
+    "default": {
+      "asvs": [
+        { "id": "V10.1", "chapter": "V10: Malicious Code", "level": ["L1"], "title": "Static code issues" }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+
+    "javascript:S5131": {
+      "asvs": [
+        { "id": "V5.3", "chapter": "V5: Validation, Sanitization, and Encoding", "level": ["L1","L2"], "title": "Cross-Site Scripting (XSS)" }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "javascript:S2078": {
+      "asvs": [
+        { "id": "V5.2", "chapter": "V5: Validation, Sanitization, and Encoding", "level": ["L1","L2"], "title": "SQL Injection" }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "javascript:S3649": {
+      "asvs": [
+        { "id": "V5.2", "chapter": "V5: Validation, Sanitization, and Encoding", "level": ["L1","L2"], "title": "Injection (NoSQL/ORM)" }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "javascript:S2091": {
+      "asvs": [
+        { "id": "V5.2", "chapter": "V5: Validation, Sanitization, and Encoding", "level": ["L1","L2"], "title": "Injection" }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "javascript:S3330": {
+      "asvs": [
+        { "id": "V6.1", "chapter": "V6: Stored Cryptography", "level": ["L1","L2"], "title": "Cryptographic Storage" }
+      ],
+      "epic": "Static Application Security Testing"
+    },
+    "javascript:S3504": {
+      "asvs": [
+        { "id": null, "chapter": "V5: Validation, Sanitization and Encoding", "level": ["L1"] }
+      ],
+      "epic": "Static Application Security Testing"
+    }
+  }
+}

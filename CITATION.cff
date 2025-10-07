@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: ASVS–Allure Security Pipeline
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Ahmad
+    given-names: Adeel
+version: v-2025-09-23-freeze
+date-released: 2025-09-23
+repository-code: https://github.com/adeelahmad6834/asvs-allure-security-pipeline
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.17289091

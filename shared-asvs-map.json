@@ -3,12 +3,12 @@
     "default": {
       "asvs": [
         {
-          "id": "V14.2",
-          "chapter": "V14: Configuration",
+          "id": "V15.2",
+          "chapter": "V15: Secure Coding and Architecture",
           "level": [
             "L1"
           ],
-          "title": "Dependency and platform hardening"
+          "title": "Security Architecture and Dependencies"
         }
       ],
       "epic": "Insecure Dependency"
@@ -16,12 +16,12 @@
     "CRITICAL": {
       "asvs": [
         {
-          "id": "V14.2",
-          "chapter": "V14: Configuration",
+          "id": "V15.2",
+          "chapter": "V15: Secure Coding and Architecture",
           "level": [
             "L1"
           ],
-          "title": "Dependency and platform hardening"
+          "title": "Security Architecture and Dependencies"
         }
       ],
       "epic": "Insecure Dependency"
@@ -29,12 +29,12 @@
     "HIGH": {
       "asvs": [
         {
-          "id": "V14.2",
-          "chapter": "V14: Configuration",
+          "id": "V15.2",
+          "chapter": "V15: Secure Coding and Architecture",
           "level": [
             "L1"
           ],
-          "title": "Dependency and platform hardening"
+          "title": "Security Architecture and Dependencies"
         }
       ],
       "epic": "Insecure Dependency"
@@ -42,12 +42,12 @@
     "MEDIUM": {
       "asvs": [
         {
-          "id": "V14.2",
-          "chapter": "V14: Configuration",
+          "id": "V15.2",
+          "chapter": "V15: Secure Coding and Architecture",
           "level": [
             "L1"
           ],
-          "title": "Dependency and platform hardening"
+          "title": "Security Architecture and Dependencies"
         }
       ],
       "epic": "Insecure Dependency"
@@ -55,12 +55,12 @@
     "LOW": {
       "asvs": [
         {
-          "id": "V14.2",
-          "chapter": "V14: Configuration",
+          "id": "V15.2",
+          "chapter": "V15: Secure Coding and Architecture",
           "level": [
             "L1"
           ],
-          "title": "Dependency and platform hardening"
+          "title": "Security Architecture and Dependencies"
         }
       ],
       "epic": "Insecure Dependency"
@@ -68,12 +68,12 @@
     "dependency": {
       "asvs": [
         {
-          "id": "V14.2",
-          "chapter": "V14: Configuration",
+          "id": "V15.2",
+          "chapter": "V15: Secure Coding and Architecture",
           "level": [
             "L1"
           ],
-          "title": "Dependency and platform hardening"
+          "title": "Security Architecture and Dependencies"
         }
       ],
       "epic": "Insecure Dependency"
@@ -81,8 +81,8 @@
     "CWE-79": {
       "asvs": [
         {
-          "id": "V5.3",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -95,8 +95,8 @@
     "CWE-89": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -109,8 +109,8 @@
     "CWE-943": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -123,8 +123,8 @@
     "CWE-78": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -137,8 +137,8 @@
     "CWE-22": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V5.2",
+          "chapter": "V5: File Handling",
           "level": [
             "L1",
             "L2"
@@ -152,7 +152,7 @@
       "asvs": [
         {
           "id": "V3.5",
-          "chapter": "V3: Session Management",
+          "chapter": "V3: Web Frontend Security",
           "level": [
             "L1",
             "L2"
@@ -165,8 +165,8 @@
     "CWE-434": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V5.2",
+          "chapter": "V5: File Handling",
           "level": [
             "L1",
             "L2"
@@ -179,8 +179,8 @@
     "CWE-502": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.5",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -193,8 +193,8 @@
     "CWE-200": {
       "asvs": [
         {
-          "id": "V8.2",
-          "chapter": "V8: Data Protection",
+          "id": "V14.2",
+          "chapter": "V14: Data Protection",
           "level": [
             "L1",
             "L2"
@@ -207,8 +207,8 @@
     "CWE-522": {
       "asvs": [
         {
-          "id": "V6.1",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -221,8 +221,8 @@
     "CWE-259": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -236,7 +236,7 @@
       "asvs": [
         {
           "id": "V6.2",
-          "chapter": "V6: Stored Cryptography",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -249,8 +249,8 @@
     "CWE-321": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -263,8 +263,8 @@
     "CWE-327": {
       "asvs": [
         {
-          "id": "V9.3",
-          "chapter": "V9: Communications",
+          "id": "V11.3",
+          "chapter": "V11: Cryptography",
           "level": [
             "L1",
             "L2"
@@ -277,8 +277,8 @@
     "CWE-319": {
       "asvs": [
         {
-          "id": "V9.1",
-          "chapter": "V9: Communications",
+          "id": "V12.2",
+          "chapter": "V12: Secure Communication",
           "level": [
             "L1",
             "L2"
@@ -291,8 +291,8 @@
     "CWE-918": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.3",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -305,8 +305,8 @@
     "CWE-611": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -319,8 +319,8 @@
     "CWE-863": {
       "asvs": [
         {
-          "id": "V4.2",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -333,8 +333,8 @@
     "CWE-284": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -347,8 +347,8 @@
     "CWE-285": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -361,8 +361,8 @@
     "CWE-77": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -375,8 +375,8 @@
     "CWE-94": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -389,8 +389,8 @@
     "CWE-640": {
       "asvs": [
         {
-          "id": "V3.4",
-          "chapter": "V3: Session Management",
+          "id": "V6.4",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -403,8 +403,8 @@
     "CWE-307": {
       "asvs": [
         {
-          "id": "V7.2",
-          "chapter": "V7: Error Handling and Logging",
+          "id": "V6.3",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -417,8 +417,8 @@
     "CWE-798": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -431,8 +431,8 @@
     "CWE-95": {
       "asvs": [
         {
-          "id": "V10.1",
-          "chapter": "V10: Malicious Code",
+          "id": "V1.3",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -445,8 +445,8 @@
     "CWE-732": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -459,8 +459,8 @@
     "CWE-639": {
       "asvs": [
         {
-          "id": "V4.2",
-          "chapter": "V4: Access Control",
+          "id": "V8.3",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -473,8 +473,8 @@
     "CWE-400": {
       "asvs": [
         {
-          "id": "V1.1",
-          "chapter": "V1: Architecture, Design and Threat Modeling",
+          "id": "V2.4",
+          "chapter": "V2: Validation and Business Logic",
           "level": [
             "L1"
           ],
@@ -488,8 +488,8 @@
     "default": {
       "asvs": [
         {
-          "id": "V14.1",
-          "chapter": "V14: Configuration",
+          "id": "V13.1",
+          "chapter": "V13: Configuration",
           "level": [
             "L1"
           ],
@@ -501,8 +501,8 @@
     "VULNERABILITY": {
       "asvs": [
         {
-          "id": "V14.2",
-          "chapter": "V14: Configuration",
+          "id": "V15.2",
+          "chapter": "V15: Secure Coding and Architecture",
           "level": [
             "L1"
           ],
@@ -514,8 +514,8 @@
     "MISCONFIGURATION": {
       "asvs": [
         {
-          "id": "V14.1",
-          "chapter": "V14: Configuration",
+          "id": "V13.1",
+          "chapter": "V13: Configuration",
           "level": [
             "L1"
           ],
@@ -527,8 +527,8 @@
     "SECRET": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1"
           ],
@@ -540,8 +540,8 @@
     "CWE-79": {
       "asvs": [
         {
-          "id": "V5.3",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -554,8 +554,8 @@
     "CWE-89": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -568,8 +568,8 @@
     "CWE-943": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -582,8 +582,8 @@
     "CWE-78": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -596,8 +596,8 @@
     "CWE-22": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V5.2",
+          "chapter": "V5: File Handling",
           "level": [
             "L1",
             "L2"
@@ -611,7 +611,7 @@
       "asvs": [
         {
           "id": "V3.5",
-          "chapter": "V3: Session Management",
+          "chapter": "V3: Web Frontend Security",
           "level": [
             "L1",
             "L2"
@@ -624,8 +624,8 @@
     "CWE-434": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V5.2",
+          "chapter": "V5: File Handling",
           "level": [
             "L1",
             "L2"
@@ -638,8 +638,8 @@
     "CWE-502": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.5",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -652,8 +652,8 @@
     "CWE-200": {
       "asvs": [
         {
-          "id": "V8.2",
-          "chapter": "V8: Data Protection",
+          "id": "V14.2",
+          "chapter": "V14: Data Protection",
           "level": [
             "L1",
             "L2"
@@ -666,8 +666,8 @@
     "CWE-522": {
       "asvs": [
         {
-          "id": "V6.1",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -680,8 +680,8 @@
     "CWE-259": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -695,7 +695,7 @@
       "asvs": [
         {
           "id": "V6.2",
-          "chapter": "V6: Stored Cryptography",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -708,8 +708,8 @@
     "CWE-321": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -722,8 +722,8 @@
     "CWE-327": {
       "asvs": [
         {
-          "id": "V9.3",
-          "chapter": "V9: Communications",
+          "id": "V11.3",
+          "chapter": "V11: Cryptography",
           "level": [
             "L1",
             "L2"
@@ -736,8 +736,8 @@
     "CWE-319": {
       "asvs": [
         {
-          "id": "V9.1",
-          "chapter": "V9: Communications",
+          "id": "V12.2",
+          "chapter": "V12: Secure Communication",
           "level": [
             "L1",
             "L2"
@@ -750,8 +750,8 @@
     "CWE-918": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.3",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -764,8 +764,8 @@
     "CWE-611": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -778,8 +778,8 @@
     "CWE-863": {
       "asvs": [
         {
-          "id": "V4.2",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -792,8 +792,8 @@
     "CWE-284": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -806,8 +806,8 @@
     "CWE-285": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -820,8 +820,8 @@
     "CWE-77": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -834,8 +834,8 @@
     "CWE-94": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -848,8 +848,8 @@
     "CWE-640": {
       "asvs": [
         {
-          "id": "V3.4",
-          "chapter": "V3: Session Management",
+          "id": "V6.4",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -862,8 +862,8 @@
     "CWE-307": {
       "asvs": [
         {
-          "id": "V7.2",
-          "chapter": "V7: Error Handling and Logging",
+          "id": "V6.3",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -876,8 +876,8 @@
     "CWE-798": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -890,8 +890,8 @@
     "CWE-95": {
       "asvs": [
         {
-          "id": "V10.1",
-          "chapter": "V10: Malicious Code",
+          "id": "V1.3",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -904,8 +904,8 @@
     "CWE-732": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -918,8 +918,8 @@
     "CWE-639": {
       "asvs": [
         {
-          "id": "V4.2",
-          "chapter": "V4: Access Control",
+          "id": "V8.3",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -932,8 +932,8 @@
     "CWE-400": {
       "asvs": [
         {
-          "id": "V1.1",
-          "chapter": "V1: Architecture, Design and Threat Modeling",
+          "id": "V2.4",
+          "chapter": "V2: Validation and Business Logic",
           "level": [
             "L1"
           ],
@@ -947,12 +947,12 @@
     "default": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V3.4",
+          "chapter": "V3: Web Frontend Security",
           "level": [
             "L1"
           ],
-          "title": "Generic input validation"
+          "title": "Browser Security Mechanism Headers"
         }
       ],
       "epic": "Dynamic Application Security Testing"
@@ -960,8 +960,8 @@
     "CWE-79": {
       "asvs": [
         {
-          "id": "V5.3",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -974,8 +974,8 @@
     "CWE-89": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -988,8 +988,8 @@
     "CWE-943": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1002,8 +1002,8 @@
     "CWE-78": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1016,8 +1016,8 @@
     "CWE-22": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V5.2",
+          "chapter": "V5: File Handling",
           "level": [
             "L1",
             "L2"
@@ -1031,7 +1031,7 @@
       "asvs": [
         {
           "id": "V3.5",
-          "chapter": "V3: Session Management",
+          "chapter": "V3: Web Frontend Security",
           "level": [
             "L1",
             "L2"
@@ -1044,8 +1044,8 @@
     "CWE-434": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V5.2",
+          "chapter": "V5: File Handling",
           "level": [
             "L1",
             "L2"
@@ -1058,8 +1058,8 @@
     "CWE-502": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.5",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1072,8 +1072,8 @@
     "CWE-200": {
       "asvs": [
         {
-          "id": "V8.2",
-          "chapter": "V8: Data Protection",
+          "id": "V14.2",
+          "chapter": "V14: Data Protection",
           "level": [
             "L1",
             "L2"
@@ -1086,8 +1086,8 @@
     "CWE-522": {
       "asvs": [
         {
-          "id": "V6.1",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -1100,8 +1100,8 @@
     "CWE-259": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -1115,7 +1115,7 @@
       "asvs": [
         {
           "id": "V6.2",
-          "chapter": "V6: Stored Cryptography",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -1128,8 +1128,8 @@
     "CWE-321": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -1142,8 +1142,8 @@
     "CWE-327": {
       "asvs": [
         {
-          "id": "V9.3",
-          "chapter": "V9: Communications",
+          "id": "V11.3",
+          "chapter": "V11: Cryptography",
           "level": [
             "L1",
             "L2"
@@ -1156,8 +1156,8 @@
     "CWE-319": {
       "asvs": [
         {
-          "id": "V9.1",
-          "chapter": "V9: Communications",
+          "id": "V12.2",
+          "chapter": "V12: Secure Communication",
           "level": [
             "L1",
             "L2"
@@ -1170,8 +1170,8 @@
     "CWE-918": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.3",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1184,8 +1184,8 @@
     "CWE-611": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1198,8 +1198,8 @@
     "CWE-863": {
       "asvs": [
         {
-          "id": "V4.2",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -1212,8 +1212,8 @@
     "CWE-284": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -1226,8 +1226,8 @@
     "CWE-285": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -1240,8 +1240,8 @@
     "CWE-77": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1254,8 +1254,8 @@
     "CWE-94": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1268,8 +1268,8 @@
     "CWE-640": {
       "asvs": [
         {
-          "id": "V3.4",
-          "chapter": "V3: Session Management",
+          "id": "V6.4",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -1282,8 +1282,8 @@
     "CWE-307": {
       "asvs": [
         {
-          "id": "V7.2",
-          "chapter": "V7: Error Handling and Logging",
+          "id": "V6.3",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -1296,8 +1296,8 @@
     "CWE-798": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -1310,8 +1310,8 @@
     "CWE-95": {
       "asvs": [
         {
-          "id": "V10.1",
-          "chapter": "V10: Malicious Code",
+          "id": "V1.3",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1324,8 +1324,8 @@
     "CWE-732": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -1338,8 +1338,8 @@
     "CWE-639": {
       "asvs": [
         {
-          "id": "V4.2",
-          "chapter": "V4: Access Control",
+          "id": "V8.3",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -1352,8 +1352,8 @@
     "CWE-400": {
       "asvs": [
         {
-          "id": "V1.1",
-          "chapter": "V1: Architecture, Design and Threat Modeling",
+          "id": "V2.4",
+          "chapter": "V2: Validation and Business Logic",
           "level": [
             "L1"
           ],
@@ -1367,8 +1367,8 @@
     "default": {
       "asvs": [
         {
-          "id": "V10.1",
-          "chapter": "V10: Malicious Code",
+          "id": "V15.3",
+          "chapter": "V15: Secure Coding and Architecture",
           "level": [
             "L1"
           ],
@@ -1380,8 +1380,8 @@
     "CWE-79": {
       "asvs": [
         {
-          "id": "V5.3",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1394,8 +1394,8 @@
     "CWE-89": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1408,8 +1408,8 @@
     "CWE-943": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1422,8 +1422,8 @@
     "CWE-78": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1436,8 +1436,8 @@
     "CWE-22": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V5.2",
+          "chapter": "V5: File Handling",
           "level": [
             "L1",
             "L2"
@@ -1451,7 +1451,7 @@
       "asvs": [
         {
           "id": "V3.5",
-          "chapter": "V3: Session Management",
+          "chapter": "V3: Web Frontend Security",
           "level": [
             "L1",
             "L2"
@@ -1464,8 +1464,8 @@
     "CWE-434": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V5.2",
+          "chapter": "V5: File Handling",
           "level": [
             "L1",
             "L2"
@@ -1478,8 +1478,8 @@
     "CWE-502": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.5",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1492,8 +1492,8 @@
     "CWE-200": {
       "asvs": [
         {
-          "id": "V8.2",
-          "chapter": "V8: Data Protection",
+          "id": "V14.2",
+          "chapter": "V14: Data Protection",
           "level": [
             "L1",
             "L2"
@@ -1506,8 +1506,8 @@
     "CWE-522": {
       "asvs": [
         {
-          "id": "V6.1",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -1520,8 +1520,8 @@
     "CWE-259": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -1535,7 +1535,7 @@
       "asvs": [
         {
           "id": "V6.2",
-          "chapter": "V6: Stored Cryptography",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -1548,8 +1548,8 @@
     "CWE-321": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -1562,8 +1562,8 @@
     "CWE-327": {
       "asvs": [
         {
-          "id": "V9.3",
-          "chapter": "V9: Communications",
+          "id": "V11.3",
+          "chapter": "V11: Cryptography",
           "level": [
             "L1",
             "L2"
@@ -1576,8 +1576,8 @@
     "CWE-319": {
       "asvs": [
         {
-          "id": "V9.1",
-          "chapter": "V9: Communications",
+          "id": "V12.2",
+          "chapter": "V12: Secure Communication",
           "level": [
             "L1",
             "L2"
@@ -1590,8 +1590,8 @@
     "CWE-918": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.3",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1604,8 +1604,8 @@
     "CWE-611": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1618,8 +1618,8 @@
     "CWE-863": {
       "asvs": [
         {
-          "id": "V4.2",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -1632,8 +1632,8 @@
     "CWE-284": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -1646,8 +1646,8 @@
     "CWE-285": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -1660,8 +1660,8 @@
     "CWE-77": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1674,8 +1674,8 @@
     "CWE-94": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1688,8 +1688,8 @@
     "CWE-640": {
       "asvs": [
         {
-          "id": "V3.4",
-          "chapter": "V3: Session Management",
+          "id": "V6.4",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -1702,8 +1702,8 @@
     "CWE-307": {
       "asvs": [
         {
-          "id": "V7.2",
-          "chapter": "V7: Error Handling and Logging",
+          "id": "V6.3",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -1716,8 +1716,8 @@
     "CWE-798": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -1730,8 +1730,8 @@
     "CWE-95": {
       "asvs": [
         {
-          "id": "V10.1",
-          "chapter": "V10: Malicious Code",
+          "id": "V1.3",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1744,8 +1744,8 @@
     "CWE-732": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -1758,8 +1758,8 @@
     "CWE-639": {
       "asvs": [
         {
-          "id": "V4.2",
-          "chapter": "V4: Access Control",
+          "id": "V8.3",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -1772,8 +1772,8 @@
     "CWE-400": {
       "asvs": [
         {
-          "id": "V1.1",
-          "chapter": "V1: Architecture, Design and Threat Modeling",
+          "id": "V2.4",
+          "chapter": "V2: Validation and Business Logic",
           "level": [
             "L1"
           ],
@@ -1787,8 +1787,8 @@
     "default": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1"
           ],
@@ -1800,8 +1800,8 @@
     "CWE-79": {
       "asvs": [
         {
-          "id": "V5.3",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1814,8 +1814,8 @@
     "CWE-89": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1828,8 +1828,8 @@
     "CWE-943": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1842,8 +1842,8 @@
     "CWE-78": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1856,8 +1856,8 @@
     "CWE-22": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V5.2",
+          "chapter": "V5: File Handling",
           "level": [
             "L1",
             "L2"
@@ -1871,7 +1871,7 @@
       "asvs": [
         {
           "id": "V3.5",
-          "chapter": "V3: Session Management",
+          "chapter": "V3: Web Frontend Security",
           "level": [
             "L1",
             "L2"
@@ -1884,8 +1884,8 @@
     "CWE-434": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V5.2",
+          "chapter": "V5: File Handling",
           "level": [
             "L1",
             "L2"
@@ -1898,8 +1898,8 @@
     "CWE-502": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.5",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -1912,8 +1912,8 @@
     "CWE-200": {
       "asvs": [
         {
-          "id": "V8.2",
-          "chapter": "V8: Data Protection",
+          "id": "V14.2",
+          "chapter": "V14: Data Protection",
           "level": [
             "L1",
             "L2"
@@ -1926,8 +1926,8 @@
     "CWE-522": {
       "asvs": [
         {
-          "id": "V6.1",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -1940,8 +1940,8 @@
     "CWE-259": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -1955,7 +1955,7 @@
       "asvs": [
         {
           "id": "V6.2",
-          "chapter": "V6: Stored Cryptography",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -1968,8 +1968,8 @@
     "CWE-321": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -1982,8 +1982,8 @@
     "CWE-327": {
       "asvs": [
         {
-          "id": "V9.3",
-          "chapter": "V9: Communications",
+          "id": "V11.3",
+          "chapter": "V11: Cryptography",
           "level": [
             "L1",
             "L2"
@@ -1996,8 +1996,8 @@
     "CWE-319": {
       "asvs": [
         {
-          "id": "V9.1",
-          "chapter": "V9: Communications",
+          "id": "V12.2",
+          "chapter": "V12: Secure Communication",
           "level": [
             "L1",
             "L2"
@@ -2010,8 +2010,8 @@
     "CWE-918": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.3",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -2024,8 +2024,8 @@
     "CWE-611": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -2038,8 +2038,8 @@
     "CWE-863": {
       "asvs": [
         {
-          "id": "V4.2",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -2052,8 +2052,8 @@
     "CWE-284": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -2066,8 +2066,8 @@
     "CWE-285": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -2080,8 +2080,8 @@
     "CWE-77": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -2094,8 +2094,8 @@
     "CWE-94": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -2108,8 +2108,8 @@
     "CWE-640": {
       "asvs": [
         {
-          "id": "V3.4",
-          "chapter": "V3: Session Management",
+          "id": "V6.4",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -2122,8 +2122,8 @@
     "CWE-307": {
       "asvs": [
         {
-          "id": "V7.2",
-          "chapter": "V7: Error Handling and Logging",
+          "id": "V6.3",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -2136,8 +2136,8 @@
     "CWE-798": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -2150,8 +2150,8 @@
     "CWE-95": {
       "asvs": [
         {
-          "id": "V10.1",
-          "chapter": "V10: Malicious Code",
+          "id": "V1.3",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -2164,8 +2164,8 @@
     "CWE-732": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -2178,8 +2178,8 @@
     "CWE-639": {
       "asvs": [
         {
-          "id": "V4.2",
-          "chapter": "V4: Access Control",
+          "id": "V8.3",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -2192,8 +2192,8 @@
     "CWE-400": {
       "asvs": [
         {
-          "id": "V1.1",
-          "chapter": "V1: Architecture, Design and Threat Modeling",
+          "id": "V2.4",
+          "chapter": "V2: Validation and Business Logic",
           "level": [
             "L1"
           ],
@@ -2207,8 +2207,8 @@
     "default": {
       "asvs": [
         {
-          "id": "V14.2",
-          "chapter": "V14: Configuration",
+          "id": "V15.2",
+          "chapter": "V15: Secure Coding and Architecture",
           "level": [
             "L1"
           ],
@@ -2220,8 +2220,8 @@
     "CRITICAL": {
       "asvs": [
         {
-          "id": "V14.2",
-          "chapter": "V14: Configuration",
+          "id": "V15.2",
+          "chapter": "V15: Secure Coding and Architecture",
           "level": [
             "L1"
           ],
@@ -2233,8 +2233,8 @@
     "HIGH": {
       "asvs": [
         {
-          "id": "V14.2",
-          "chapter": "V14: Configuration",
+          "id": "V15.2",
+          "chapter": "V15: Secure Coding and Architecture",
           "level": [
             "L1"
           ],
@@ -2246,8 +2246,8 @@
     "MODERATE": {
       "asvs": [
         {
-          "id": "V14.2",
-          "chapter": "V14: Configuration",
+          "id": "V15.2",
+          "chapter": "V15: Secure Coding and Architecture",
           "level": [
             "L1"
           ],
@@ -2259,8 +2259,8 @@
     "LOW": {
       "asvs": [
         {
-          "id": "V14.2",
-          "chapter": "V14: Configuration",
+          "id": "V15.2",
+          "chapter": "V15: Secure Coding and Architecture",
           "level": [
             "L1"
           ],
@@ -2272,8 +2272,8 @@
     "CWE-79": {
       "asvs": [
         {
-          "id": "V5.3",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -2286,8 +2286,8 @@
     "CWE-89": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -2300,8 +2300,8 @@
     "CWE-943": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -2314,8 +2314,8 @@
     "CWE-78": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -2328,8 +2328,8 @@
     "CWE-22": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V5.2",
+          "chapter": "V5: File Handling",
           "level": [
             "L1",
             "L2"
@@ -2343,7 +2343,7 @@
       "asvs": [
         {
           "id": "V3.5",
-          "chapter": "V3: Session Management",
+          "chapter": "V3: Web Frontend Security",
           "level": [
             "L1",
             "L2"
@@ -2356,8 +2356,8 @@
     "CWE-434": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V5.2",
+          "chapter": "V5: File Handling",
           "level": [
             "L1",
             "L2"
@@ -2370,8 +2370,8 @@
     "CWE-502": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.5",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -2384,8 +2384,8 @@
     "CWE-200": {
       "asvs": [
         {
-          "id": "V8.2",
-          "chapter": "V8: Data Protection",
+          "id": "V14.2",
+          "chapter": "V14: Data Protection",
           "level": [
             "L1",
             "L2"
@@ -2398,8 +2398,8 @@
     "CWE-522": {
       "asvs": [
         {
-          "id": "V6.1",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -2412,8 +2412,8 @@
     "CWE-259": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -2427,7 +2427,7 @@
       "asvs": [
         {
           "id": "V6.2",
-          "chapter": "V6: Stored Cryptography",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -2440,8 +2440,8 @@
     "CWE-321": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -2454,8 +2454,8 @@
     "CWE-327": {
       "asvs": [
         {
-          "id": "V9.3",
-          "chapter": "V9: Communications",
+          "id": "V11.3",
+          "chapter": "V11: Cryptography",
           "level": [
             "L1",
             "L2"
@@ -2468,8 +2468,8 @@
     "CWE-319": {
       "asvs": [
         {
-          "id": "V9.1",
-          "chapter": "V9: Communications",
+          "id": "V12.2",
+          "chapter": "V12: Secure Communication",
           "level": [
             "L1",
             "L2"
@@ -2482,8 +2482,8 @@
     "CWE-918": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.3",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -2496,8 +2496,8 @@
     "CWE-611": {
       "asvs": [
         {
-          "id": "V5.1",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -2510,8 +2510,8 @@
     "CWE-863": {
       "asvs": [
         {
-          "id": "V4.2",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -2524,8 +2524,8 @@
     "CWE-284": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -2538,8 +2538,8 @@
     "CWE-285": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -2552,8 +2552,8 @@
     "CWE-77": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -2566,8 +2566,8 @@
     "CWE-94": {
       "asvs": [
         {
-          "id": "V5.2",
-          "chapter": "V5: Validation, Sanitization, and Encoding",
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -2580,8 +2580,8 @@
     "CWE-640": {
       "asvs": [
         {
-          "id": "V3.4",
-          "chapter": "V3: Session Management",
+          "id": "V6.4",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -2594,8 +2594,8 @@
     "CWE-307": {
       "asvs": [
         {
-          "id": "V7.2",
-          "chapter": "V7: Error Handling and Logging",
+          "id": "V6.3",
+          "chapter": "V6: Authentication",
           "level": [
             "L1",
             "L2"
@@ -2608,8 +2608,8 @@
     "CWE-798": {
       "asvs": [
         {
-          "id": "V6.3",
-          "chapter": "V6: Stored Cryptography",
+          "id": "V13.3",
+          "chapter": "V13: Configuration",
           "level": [
             "L1",
             "L2"
@@ -2622,8 +2622,8 @@
     "CWE-95": {
       "asvs": [
         {
-          "id": "V10.1",
-          "chapter": "V10: Malicious Code",
+          "id": "V1.3",
+          "chapter": "V1: Encoding and Sanitization",
           "level": [
             "L1",
             "L2"
@@ -2636,8 +2636,8 @@
     "CWE-732": {
       "asvs": [
         {
-          "id": "V4.1",
-          "chapter": "V4: Access Control",
+          "id": "V8.2",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -2650,8 +2650,8 @@
     "CWE-639": {
       "asvs": [
         {
-          "id": "V4.2",
-          "chapter": "V4: Access Control",
+          "id": "V8.3",
+          "chapter": "V8: Authorization",
           "level": [
             "L1",
             "L2"
@@ -2664,8 +2664,8 @@
     "CWE-400": {
       "asvs": [
         {
-          "id": "V1.1",
-          "chapter": "V1: Architecture, Design and Threat Modeling",
+          "id": "V2.4",
+          "chapter": "V2: Validation and Business Logic",
           "level": [
             "L1"
           ],
@@ -2678,44 +2678,97 @@
   "sonar": {
     "default": {
       "asvs": [
-        { "id": "V10.1", "chapter": "V10: Malicious Code", "level": ["L1"], "title": "Static code issues" }
+        {
+          "id": "V15.3",
+          "chapter": "V15: Secure Coding and Architecture",
+          "level": [
+            "L1"
+          ],
+          "title": "Static code issues"
+        }
       ],
       "epic": "Static Application Security Testing"
     },
-
     "javascript:S5131": {
       "asvs": [
-        { "id": "V5.3", "chapter": "V5: Validation, Sanitization, and Encoding", "level": ["L1","L2"], "title": "Cross-Site Scripting (XSS)" }
+        {
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cross-Site Scripting (XSS)"
+        }
       ],
       "epic": "Static Application Security Testing"
     },
     "javascript:S2078": {
       "asvs": [
-        { "id": "V5.2", "chapter": "V5: Validation, Sanitization, and Encoding", "level": ["L1","L2"], "title": "SQL Injection" }
+        {
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "SQL Injection"
+        }
       ],
       "epic": "Static Application Security Testing"
     },
     "javascript:S3649": {
       "asvs": [
-        { "id": "V5.2", "chapter": "V5: Validation, Sanitization, and Encoding", "level": ["L1","L2"], "title": "Injection (NoSQL/ORM)" }
+        {
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Injection (NoSQL/ORM)"
+        }
       ],
       "epic": "Static Application Security Testing"
     },
     "javascript:S2091": {
       "asvs": [
-        { "id": "V5.2", "chapter": "V5: Validation, Sanitization, and Encoding", "level": ["L1","L2"], "title": "Injection" }
+        {
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Injection"
+        }
       ],
       "epic": "Static Application Security Testing"
     },
     "javascript:S3330": {
       "asvs": [
-        { "id": "V6.1", "chapter": "V6: Stored Cryptography", "level": ["L1","L2"], "title": "Cryptographic Storage" }
+        {
+          "id": "V11.2",
+          "chapter": "V11: Cryptography",
+          "level": [
+            "L1",
+            "L2"
+          ],
+          "title": "Cryptographic Storage"
+        }
       ],
       "epic": "Static Application Security Testing"
     },
     "javascript:S3504": {
       "asvs": [
-        { "id": null, "chapter": "V5: Validation, Sanitization and Encoding", "level": ["L1"] }
+        {
+          "id": "V1.2",
+          "chapter": "V1: Encoding and Sanitization",
+          "level": [
+            "L1"
+          ],
+          "title": "Validation and Encoding"
+        }
       ],
       "epic": "Static Application Security Testing"
     }

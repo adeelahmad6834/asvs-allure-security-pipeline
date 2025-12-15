@@ -692,6 +692,18 @@ function parseSemgrep(obj: any): NormFinding[] {
       if (c) refs.push(String(c));
     }
 
+    // Extract CWE: handle both string format "cwe-79" and object format {id: "79"}
+    let cweNumber: string | null = null;
+    if (md.cwe) {
+      if (typeof md.cwe === 'string') {
+        // Extract number from "cwe-79" or "CWE-79"
+        const match = md.cwe.match(/cwe-?(\d+)/i);
+        cweNumber = match ? match[1] : null;
+      } else if (md.cwe?.id) {
+        cweNumber = String(md.cwe.id);
+      }
+    }
+
     out.push({
       tool: 'semgrep',
       ruleKey: ruleId,
@@ -700,7 +712,7 @@ function parseSemgrep(obj: any): NormFinding[] {
       severity,
       score: null,
       references: refs.filter(Boolean).slice(0, 12),
-      cwe: (md as any)?.cwe?.id || null,
+      cwe: cweNumber,
       groupName: file,
     });
   }
